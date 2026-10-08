@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <meta name="description" content="Curriculum Vitae de Miguel Ángel Molina Tejedor - Senior Fullstack Developer & Software Engineer">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23030712'/><text x='4' y='22' font-family='monospace' font-weight='bold' font-size='18' fill='%2310b981'>&gt;_</text></svg>">
+  <title>Miguel Ángel Molina Tejedor - Terminal CV</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Fira Code', monospace;
+    }    
+    .text-inter {
+      font-family: 'Inter', sans-serif;
+    }
+    @keyframes cursor-blink {
+      0%, 45% { opacity: 1; }
+      50%, 95% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    .animate-cursor {
+      animation: cursor-blink 3s infinite;
+    }
+    @page {
+      size: A4 portrait;
+      margin: 0;
+    }
+
+    @media print {
+      body {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+        background-color: theme('colors.gray.950') !important;
+        color: theme('colors.gray.300') !important;
+      }      
+      .no-print { display: none !important; }
+    }
+  </style>
+</head>
+<body class="p-6 md:p-10 max-w-[53rem] mx-auto min-h-screen flex flex-col justify-between border-t-4 border-emerald-500 shadow-2xl bg-gray-50 text-gray-900 dark:bg-gray-950 dark:text-gray-300 transition-colors duration-200">
+
+  <div>
+    <div class="flex items-center justify-between pb-3 mb-5 border-b border-gray-300 dark:border-gray-800 text-xs text-gray-600 dark:text-gray-400" aria-hidden="true">
+      <div class="flex items-center space-x-1.5">
+        <span class="w-3 h-3 rounded-full bg-red-500 inline-block"></span>
+        <span class="w-3 h-3 rounded-full bg-yellow-500 inline-block"></span>
+        <span class="w-3 h-3 rounded-full bg-green-500 inline-block"></span>
+        <span class="ml-2 font-mono text-gray-600 dark:text-gray-400">mamolina-cli v30.0 --profile --single-page</span>
+      </div>
+      <div class="font-mono hidden md:block">bash - 80x24</div>
+    </div>
+
+    <header class="mb-6">
+      <div class="flex items-center justify-between text-xs mb-1">
+        <span class="text-emerald-700 dark:text-emerald-400 font-mono font-semibold">$ mamolina --whoami --status</span>
+        
+        <button id="theme-toggle" onclick="toggleTheme()" aria-label="Cambiar a modo claro u oscuro" class="no-print flex items-center space-x-1.5 text-gray-600 dark:text-gray-400 hover:text-emerald-700 dark:hover:text-emerald-400 transition-colors font-mono cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 rounded px-1">
+          <span class="text-[10px] uppercase font-bold tracking-wider" id="theme-label" aria-live="polite">[DARK]</span>
+          <span id="theme-icon" aria-hidden="true">🌙</span>
+        </button>
+      </div>
+
+      <h1 class="text-lg md:text-3xl font-bold text-gray-900 dark:text-white tracking-wide inline-flex items-baseline">
+        MIGUEL ÁNGEL MOLINA TEJEDOR
+        <span class="no-print inline-block w-4 h-0.5 md:h-1 bg-emerald-600 dark:bg-emerald-400 ml-0.5 animate-cursor" aria-hidden="true"></span>
+      </h1>
+      <p class="text-emerald-700 dark:text-emerald-400 font-semibold text-xs md:text-sm mt-1">
+        Senior Fullstack Developer & Software Engineer
+      </p>
+      
+      <div class="mt-3 p-3 bg-gray-200/80 dark:bg-gray-900/90 rounded border border-gray-300 dark:border-gray-800 text-xs text-gray-800 dark:text-gray-300 text-inter leading-relaxed">
+        <span class="text-emerald-700 dark:text-emerald-400 font-mono font-bold">&gt; MANIFESTO:</span> 
+        "La tecnología no es el fin, es la herramienta. Me interesa entender el problema, encontrar la mejor solución y asegurarme de que funcione. Aporto 30 años de experiencia, criterio técnico y cero humo."
+      </div>      
+    </header>
+
+    <main class="grid grid-cols-1 md:grid-cols-12 gap-5 text-xs">
+
+      <div class="col-span-1 md:col-span-4 space-y-5 border-b md:border-b-0 md:border-r border-gray-300 dark:border-gray-800 pb-4 md:pb-0 md:pr-4">
+
+        <section class="pb-2" aria-labelledby="sec-location">
+          <h2 id="sec-location" class="text-gray-600 dark:text-gray-400 font-bold uppercase tracking-wider mb-2 text-xs font-mono">// 00_LOCATION_&_LINKS</h2>
+          <ul class="space-y-1.5 text-gray-800 dark:text-gray-300 font-mono">
+            <li><span aria-hidden="true">📍</span> Alameda de Cervera (Remoto / Presencial)</li>
+            <li><span aria-hidden="true">🌐</span> <a href="https://codebrew.es" class="text-cyan-700 dark:text-cyan-400 hover:underline focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-cyan-500 rounded" target="_blank" rel="noopener noreferrer">codebrew.es <span class="sr-only">(se abre en nueva pestaña)</span></a></li>
+            <li><span aria-hidden="true">💼</span> <a href="https://linkedin.com/in/miguel-ángel-molina-tejedor-9b89a633" class="text-cyan-700 dark:text-cyan-400 hover:underline focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-cyan-500 rounded" target="_blank" rel="noopener noreferrer">linkedin.com <span class="sr-only">(se abre en nueva pestaña)</span></a></li>
+          </ul>
+        </section>
+
+        <section class="pb-2" aria-labelledby="sec-dependencies">
+          <h2 id="sec-dependencies" class="text-gray-600 dark:text-gray-400 font-bold uppercase tracking-wider mb-2 text-xs font-mono">// 01_CORE_DEPENDENCIES</h2>
+          
+          <div class="space-y-3">
+            <div>
+              <span class="text-amber-700 dark:text-amber-400 font-bold block mb-1">Frontend & Mobile:</span>
+              <ul class="flex flex-wrap gap-1">
+                <li class="bg-gray-200 dark:bg-gray-800 px-1.5 py-0.5 rounded text-gray-800 dark:text-gray-300">Angular</li>
+                <li class="bg-gray-200 dark:bg-gray-800 px-1.5 py-0.5 rounded text-gray-800 dark:text-gray-300">Tailwind</li>
+                <li class="bg-gray-200 dark:bg-gray-800 px-1.5 py-0.5 rounded text-gray-800 dark:text-gray-300">Flutter</li>
+                <li class="bg-gray-200 dark:bg-gray-800 px-1.5 py-0.5 rounded text-gray-800 dark:text-gray-300">Ionic</li>
+              </ul>
+            </div>
+
+            <div>
+              <span class="text-amber-700 dark:text-amber-400 font-bold block mb-1">Backend & Databases:</span>
+              <ul class="flex flex-wrap gap-1">
+                <li class="bg-gray-200 dark:bg-gray-800 px-1.5 py-0.5 rounded text-gray-800 dark:text-gray-300">Node.js</li>
+                <li class="bg-gray-200 dark:bg-gray-800 px-1.5 py-0.5 rounded text-gray-800 dark:text-gray-300">NestJS</li>
+                <li class="bg-gray-200 dark:bg-gray-800 px-1.5 py-0.5 rounded text-gray-800 dark:text-gray-300">PostgreSQL</li>
+                <li class="bg-gray-200 dark:bg-gray-800 px-1.5 py-0.5 rounded text-gray-800 dark:text-gray-300">MySQL</li>
+                <li class="bg-gray-200 dark:bg-gray-800 px-1.5 py-0.5 rounded text-gray-800 dark:text-gray-300">MongoDB</li>
+                <li class="bg-gray-200 dark:bg-gray-800 px-1.5 py-0.5 rounded text-gray-800 dark:text-gray-300">Prisma</li>
+              </ul>
+            </div>
+
+            <div>
+              <span class="text-amber-700 dark:text-amber-400 font-bold block mb-1">Ops, CMS & AI:</span>
+              <ul class="flex flex-wrap gap-1">
+                <li class="bg-gray-200 dark:bg-gray-800 px-1.5 py-0.5 rounded text-gray-800 dark:text-gray-300">Git</li>
+                <li class="bg-gray-200 dark:bg-gray-800 px-1.5 py-0.5 rounded text-gray-800 dark:text-gray-300">Docker</li>
+                <li class="bg-gray-200 dark:bg-gray-800 px-1.5 py-0.5 rounded text-gray-800 dark:text-gray-300">WordPress</li>
+                <li class="bg-gray-200 dark:bg-gray-800 px-1.5 py-0.5 rounded text-gray-800 dark:text-gray-300">PrestaShop</li>
+                <li class="bg-emerald-100 text-emerald-900 dark:bg-emerald-950 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-800 px-1.5 py-0.5 rounded">n8n (Automation)</li>
+                <li class="bg-emerald-100 text-emerald-900 dark:bg-emerald-950 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-800 px-1.5 py-0.5 rounded">Applied AI</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section aria-labelledby="sec-education">
+          <h2 id="sec-education" class="text-gray-600 dark:text-gray-400 font-bold uppercase tracking-wider mb-2 text-xs font-mono">// 02_SYSTEM_EDUCATION</h2>
+          <div class="text-gray-800 dark:text-gray-300 space-y-2 text-inter">
+            <div>
+              <div class="font-semibold text-gray-900 dark:text-white">Escuela Superior de Informática</div>
+              <div class="text-gray-600 dark:text-gray-400 text-xs">Universidad de Castilla-La Mancha</div>
+            </div>
+            <div>
+              <div class="font-semibold text-gray-900 dark:text-white">Enterprise Application Integration</div>
+              <div class="text-gray-600 dark:text-gray-400 text-xs">Price Waterhouse Coopers / UCLM</div>
+            </div>
+            <div>
+              <div class="font-semibold text-gray-900 dark:text-white">Accesibilidad Web</div>
+              <div class="text-gray-600 dark:text-gray-400 text-xs">FICH-FUNDETEL</div>
+            </div>
+            <div>
+              <div class="font-semibold text-gray-900 dark:text-white">Automatización + IA</div>
+              <div class="text-gray-600 dark:text-gray-400 text-xs">Raiola Networks</div>
+            </div>
+            <div>
+              <div class="font-semibold text-gray-900 dark:text-white">Centro de Alto Rendimiento Empresarial</div>
+              <div class="text-gray-600 dark:text-gray-400 text-xs">Fundación EOI</div>
+            </div>
+            <div class="pt-1 font-mono text-xs">
+              <span aria-hidden="true">🌐</span> Inglés: <span class="text-emerald-700 dark:text-emerald-400 font-semibold">Alto</span> | Francés: <span class="text-amber-700 dark:text-amber-400 font-semibold">Medio</span>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+      <div class="col-span-1 md:col-span-8 space-y-5 text-inter">
+
+        <section class="pb-3" aria-labelledby="sec-log">
+          <h2 id="sec-log" class="text-gray-600 dark:text-gray-400 font-bold uppercase tracking-wider mb-2 text-xs font-mono">// 03_EXECUTION_LOG</h2>
+          
+          <div class="space-y-3 text-gray-800 dark:text-gray-300 leading-relaxed text-sm">
+            <p>
+              <strong class="text-gray-900 dark:text-white font-mono">Una trayectoria poco lineal:</strong><br>
+              Inicié mi carrera como analista-programador en 1994 y desde entonces he pasado por prácticamente todos los roles del ciclo de vida del software: programación, diseño UI/UX, análisis, dirección de proyectos y gestión de departamentos. He sido asalariado, autónomo, socio y emprendedor.
+            </p>
+            <p>
+              Esa experiencia y roles me permiten entender el código pero también la arquitectura del proyecto, la viabilidad financiera y la experiencia de los usuarios reales.
+            </p>
+          </div>
+        </section>
+
+        <section class="pb-3" aria-labelledby="sec-clients">
+          <h2 id="sec-clients" class="text-gray-600 dark:text-gray-400 font-bold uppercase tracking-wider mb-2 text-xs font-mono">// 04_ENTERPRISE_CLIENTS</h2>
+          <div class="p-3 bg-gray-200/60 dark:bg-gray-900/50 rounded border border-gray-300 dark:border-gray-800/80">
+            <ul class="grid grid-cols-2 gap-2 text-xs font-mono text-gray-800 dark:text-gray-300">
+              <li><span class="text-emerald-700 dark:text-emerald-400" aria-hidden="true">✓</span> Sanitas, Pfizer, AbbVie</li>
+              <li><span class="text-emerald-700 dark:text-emerald-400" aria-hidden="true">✓</span> Nestlé, Caja Rural, TRAGSATEC</li>
+              <li><span class="text-emerald-700 dark:text-emerald-400" aria-hidden="true">✓</span> Generalitat de Catalunya</li>
+              <li><span class="text-emerald-700 dark:text-emerald-400" aria-hidden="true">✓</span> JCCM, UCLM & Comillas</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="pb-3" aria-labelledby="sec-attributes">
+          <h2 id="sec-attributes" class="text-gray-600 dark:text-gray-400 font-bold uppercase tracking-wider mb-2 text-xs font-mono">// 05_CORE_SYSTEM_ATTRIBUTES</h2>
+          
+          <div class="grid grid-cols-2 gap-3">
+            <div class="p-2.5 bg-gray-200/60 dark:bg-gray-900/80 rounded border border-gray-300 dark:border-gray-800">
+              <h3 class="font-mono text-emerald-700 dark:text-emerald-400 font-bold block mb-0.5 text-xs">Pensamiento Analítico</h3>
+              <p class="text-[0.6875rem] text-gray-700 dark:text-gray-400">Entender el problema real antes de picar código. Elegir la solución sensata.</p>
+            </div>
+
+            <div class="p-2.5 bg-gray-200/60 dark:bg-gray-900/80 rounded border border-gray-300 dark:border-gray-800">
+              <h3 class="font-mono text-emerald-700 dark:text-emerald-400 font-bold block mb-0.5 text-xs">Creatividad Técnica</h3>
+              <p class="text-[0.6875rem] text-gray-700 dark:text-gray-400">Plantear alternativas y encontrar otros caminos cuando lo evidente no basta.</p>
+            </div>
+
+            <div class="p-2.5 bg-gray-200/60 dark:bg-gray-900/80 rounded border border-gray-300 dark:border-gray-800">
+              <h3 class="font-mono text-emerald-700 dark:text-emerald-400 font-bold block mb-0.5 text-xs">Visión Transversal</h3>
+              <p class="text-[0.6875rem] text-gray-700 dark:text-gray-400">Hablar el idioma del código, del proyecto, del cliente y del negocio.</p>
+            </div>
+
+            <div class="p-2.5 bg-gray-200/60 dark:bg-gray-900/80 rounded border border-gray-300 dark:border-gray-800">
+              <h3 class="font-mono text-emerald-700 dark:text-emerald-400 font-bold block mb-0.5 text-xs">Equipo y Aprendizaje</h3>
+              <p class="text-[0.6875rem] text-gray-700 dark:text-gray-400">Comunicación y asertividad. Curiosidad y capacidad de adaptación.</p>
+            </div>
+          </div>
+        </section>
+
+        <section aria-labelledby="sec-out-of-bounds">
+          <h2 id="sec-out-of-bounds" class="text-gray-600 dark:text-gray-400 font-bold uppercase tracking-wider mb-2 text-xs font-mono">// 06_OUT_OF_BOUNDS</h2>
+          <ul class="text-gray-700 dark:text-gray-400 text-inter space-y-1 text-xs">
+            <li><span aria-hidden="true">👾</span> Friki confeso y coleccionista de juguetes antiguos.</li>
+            <li><span aria-hidden="true">📚</span> Voraz lector de cómics.</li>
+            <li><span aria-hidden="true">♟️</span> Juegos de estrategia: pensar jugadas, anticipar movimientos y buscar alternativas.</li>
+          </ul>
+        </section>
+
+      </div>
+
+    </main>
+  </div>
+
+  <footer class="mt-6 pt-3 border-t border-gray-300 dark:border-gray-800 flex flex-col sm:flex-row justify-between items-center gap-2 text-xs font-mono text-gray-600 dark:text-gray-400">
+    <div>Status: <span class="text-emerald-700 dark:text-emerald-400 font-semibold">Available for Work, Freelance & Key Projects</span></div>
+    
+    <div class="no-print flex items-center space-x-1.5 text-gray-700 dark:text-gray-300 text-xs" title="Cumple con las pautas de accesibilidad web WCAG 2.1 / 2.2 Nivel AA">
+      <span class="text-emerald-700 dark:text-emerald-400 font-bold" aria-hidden="true">♿</span>
+      <span class="font-bold">WCAG 2.1 AA</span>
+      <span class="text-gray-500 dark:text-gray-400">Compliant</span>
+    </div>
+
+    <button onclick="window.print()" aria-label="Guardar o imprimir el currículum en formato PDF" class="no-print border border-emerald-500/50 hover:bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 px-3 py-1 rounded text-xs transition-colors font-mono cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500">
+      📄 Imprimir PDF
+    </button>
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      const htmlEl = document.documentElement;
+      const themeLabel = document.getElementById('theme-label');
+      const themeIcon = document.getElementById('theme-icon');
+      
+      if (htmlEl.classList.contains('dark')) {
+        htmlEl.classList.remove('dark');
+        themeLabel.textContent = '[LIGHT]';
+        themeIcon.textContent = '☀️';
+      } else {
+        htmlEl.classList.add('dark');
+        themeLabel.textContent = '[DARK]';
+        themeIcon.textContent = '🌙';
+      }
+    }
+  </script>
+</body>
+</html>
