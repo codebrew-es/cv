@@ -88,7 +88,23 @@
         <section class="pb-2" aria-labelledby="sec-location">
           <h2 id="sec-location" class="text-gray-600 dark:text-gray-400 font-bold uppercase tracking-wider mb-2 text-xs font-mono">// 00_LOCATION_&_LINKS</h2>
           <ul class="space-y-1.5 text-gray-800 dark:text-gray-300 font-mono">
-            <li><span aria-hidden="true">📍</span> Alameda de Cervera (Remoto / Presencial)</li>
+            <li><span aria-hidden="true">📍</span> Alameda de Cervera</li>
+            <li>
+              <span aria-hidden="true">📞</span> 
+              <a href="tel:+34621502865" 
+                aria-label="Llamar al teléfono +34 621 502 865" 
+                class="text-cyan-700 dark:text-cyan-400 hover:underline focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-cyan-500 rounded">
+                +34 621 502 865
+              </a>
+            </li>
+            <li>
+              <span aria-hidden="true">✉️</span> 
+              <a href="mailto:hola@codebrew.es" 
+                aria-label="Enviar correo electrónico a hola@codebrew.es" 
+                class="text-cyan-700 dark:text-cyan-400 hover:underline focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-cyan-500 rounded">
+                hola@codebrew.es
+              </a>
+            </li>
             <li><span aria-hidden="true">🌐</span> <a href="https://codebrew.es" class="text-cyan-700 dark:text-cyan-400 hover:underline focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-cyan-500 rounded" target="_blank" rel="noopener noreferrer">codebrew.es <span class="sr-only">(se abre en nueva pestaña)</span></a></li>
             <li><span aria-hidden="true">💼</span> <a href="https://linkedin.com/in/miguel-ángel-molina-tejedor-9b89a633" class="text-cyan-700 dark:text-cyan-400 hover:underline focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-cyan-500 rounded" target="_blank" rel="noopener noreferrer">linkedin.com <span class="sr-only">(se abre en nueva pestaña)</span></a></li>
           </ul>
@@ -135,7 +151,7 @@
         </section>
 
         <section aria-labelledby="sec-education">
-          <h2 id="sec-education" class="text-gray-600 dark:text-gray-400 font-bold uppercase tracking-wider mb-2 text-xs font-mono">// 02_SYSTEM_EDUCATION</h2>
+          <h2 id="sec-education" class="text-gray-600 dark:text-gray-400 font-bold uppercase tracking-wider text-xs font-mono">// 02_SYSTEM_EDUCATION</h2>
           <div class="text-gray-800 dark:text-gray-300 space-y-2 text-inter">
             <div>
               <div class="font-semibold text-gray-900 dark:text-white">Escuela Superior de Informática</div>
@@ -154,11 +170,11 @@
               <div class="text-gray-600 dark:text-gray-400 text-xs">Raiola Networks</div>
             </div>
             <div>
-              <div class="font-semibold text-gray-900 dark:text-white">Centro de Alto Rendimiento Empresarial</div>
+              <div class="font-semibold text-gray-900 dark:text-white">Caentro Alto Rendimiento Empresarial</div>
               <div class="text-gray-600 dark:text-gray-400 text-xs">Fundación EOI</div>
             </div>
             <div class="pt-1 font-mono text-xs">
-              <span aria-hidden="true">🌐</span> Inglés: <span class="text-emerald-700 dark:text-emerald-400 font-semibold">Alto</span> | Francés: <span class="text-amber-700 dark:text-amber-400 font-semibold">Medio</span>
+              <span aria-hidden="true">🌐</span> Inglés: <span class="text-emerald-700 dark:text-emerald-400 font-semibold">Alto</span>
             </div>
           </div>
         </section>
@@ -242,9 +258,18 @@
       <span class="text-gray-500 dark:text-gray-400">Compliant</span>
     </div>
 
-    <button onclick="window.print()" aria-label="Guardar o imprimir el currículum en formato PDF" class="no-print border border-emerald-500/50 hover:bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 px-3 py-1 rounded text-xs transition-colors font-mono cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500">
-      📄 Imprimir PDF
-    </button>
+    <div>
+      <button onclick="window.print()" aria-label="Guardar o imprimir el currículum en formato PDF" class="no-print border border-emerald-500/50 hover:bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 px-3 py-1 rounded text-xs transition-colors font-mono cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500">
+        📄 Imprimir PDF
+      </button>
+
+      <div class="hidden print:flex items-center space-x-1 text-xs">
+        <span>View in web:</span>
+        <a href="https://www.mamolina.dev" class="text-cyan-700 dark:text-cyan-400 font-bold hover:underline" target="_blank" rel="noopener noreferrer">
+          https://www.mamolina.dev
+        </a>
+      </div>
+    </div>
   </footer>
 
   <script>
