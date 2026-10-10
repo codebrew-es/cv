@@ -14,6 +14,7 @@ Está optimizado tanto para la navegación web como para la exportación directa
   - Uso de clases `sr-only` para lectores de pantalla en enlaces externos.
   - Indicadores visuales de foco claros (`focus-visible`) para navegación 100% por teclado.
   - Relación de contraste optimizada mediante la paleta nativa de Tailwind CSS.
+- **Analítica Ética y de Alto Rendimiento**: Implementación de **GoatCounter** en lugar de Google Analytics. Script de <1KB, cero cookies, cumplimiento automático de la RGPD (sin necesidad del molesto banner de consentimiento) y respeto total por la privacidad del visitante.
 - **Sin Dependencias de Build**: Implementación ligera utilizando CDN para Tailwind CSS y Google Fonts, permitiendo su despliegue inmediato en cualquier servidor estático o GitHub Pages.
 
 ## 🛠️ Stack Tecnológico
@@ -21,6 +22,7 @@ Está optimizado tanto para la navegación web como para la exportación directa
 - **HTML5**: Estructura semántica accesible.
 - **CSS3 / Tailwind CSS**: Maquetación en Grid, utilidades responsive y control de `@media print`.
 - **JavaScript (Vanilla)**: Lógica ligera para el control del tema (Dark/Light) e interacción con `window.print()`.
+- **GoatCounter**: Analítica web ligera y privacy-first.
 
 ## 📁 Estructura del Proyecto
 
